@@ -27,6 +27,5 @@ const readFile = (filePath) => {
 
 module.exports = {
   readFile,
-  convertFileToJson,
   writeFile,
 };

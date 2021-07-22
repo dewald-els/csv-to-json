@@ -6,7 +6,7 @@ readFile("./ufo_sightings.csv").then((csvContents) => {
     parseNumbers: true,
     separator: ';'
   });
-  writeFile("./ufo_sightings.json", { sightings: json });
+  return writeFile("./ufo_sightings.json", { sightings: json });
 }).then(() => {
   console.log('Successfully written file');
 }).catch(error => {
